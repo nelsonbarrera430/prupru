@@ -1,20 +1,17 @@
 const user = JSON.parse(localStorage.getItem("user"));
 const loaderToken = "loaderio-efbef567c31b278347796a38724003cd";
 
-// No redirigir si Loader.io accede al archivo
+// Redirigir a login si no hay usuario y no es Loader.io
 if (!user && !window.location.href.includes(loaderToken)) {
     window.location.href = "login.html";
 }
-
-document.getElementById("welcome")?.textContent =
-    user ? "Bienvenido, " + user.name : "";
 
 document.getElementById("logoutBtn")?.addEventListener("click", () => {
     localStorage.removeItem("user");
     window.location.href = "login.html";
 });
 
-// Mostrar usuarios de MockAPI en tarjetas
+// Mostrar usuarios de MockAPI
 async function loadUsers() {
     const users = await apiGET("users");
     const container = document.getElementById("cards");
