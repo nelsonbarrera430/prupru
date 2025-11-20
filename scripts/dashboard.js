@@ -1,5 +1,5 @@
 const user = JSON.parse(localStorage.getItem("user"));
-const loaderToken = "loaderio-efbef567c31b278347796a38724003cd";
+const loaderToken = "loaderio-4b14d5387cffc9c7d72d7947b1f1a0f8";
 
 // Redirigir a login si no hay usuario y no es Loader.io
 if (!user && !window.location.href.includes(loaderToken)) {
