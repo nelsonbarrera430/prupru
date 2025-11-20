@@ -2,23 +2,58 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>Dashboard</title>
+<title>Dashboard Billetera Cripto</title>
 <link rel="stylesheet" href="styles/main.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<div class="container">
-    <h1>Dashboard</h1>
-    <p id="welcome"></p>
+<header>
+    <h1>Mi Billetera Cripto</h1>
+    <nav>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="#">Transacciones</a>
+        <a href="#">Perfil</a>
+    </nav>
+</header>
 
-    <div id="cards" class="cards-container">
-        <!-- Aquí aparecerán las tarjetas de usuario -->
+<section class="wallet-overview">
+    <div class="card balance">
+        <h2>Saldo Total</h2>
+        <p>0.5234 BTC</p>
     </div>
+    <div class="card portfolio">
+        <h2>Portafolio</h2>
+        <p>2 Criptomonedas</p>
+    </div>
+    <div class="card recent">
+        <h2>Última Transacción</h2>
+        <p>+0.01 BTC recibido</p>
+    </div>
+</section>
 
-    <button id="logoutBtn" class="btn">Cerrar sesión</button>
-</div>
+<section class="crypto-list">
+    <h2>Criptomonedas</h2>
+    <div class="crypto-cards">
+        <div class="crypto-card">
+            <h3>Bitcoin</h3>
+            <p>0.5234 BTC</p>
+        </div>
+        <div class="crypto-card">
+            <h3>Ethereum</h3>
+            <p>1.24 ETH</p>
+        </div>
+        <div class="crypto-card">
+            <h3>Litecoin</h3>
+            <p>10.5 LTC</p>
+        </div>
+    </div>
+</section>
 
-<script src="scripts/api.js"></script>
+<footer>
+    <p>© 2025 Mi Billetera Cripto</p>
+</footer>
+
 <script src="scripts/dashboard.js"></script>
 </body>
 </html>
