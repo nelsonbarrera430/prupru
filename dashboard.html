@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Dashboard Billetera Cripto</title>
+<link rel="stylesheet" href="styles/main.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <h1>Mi Billetera Cripto</h1>
+    <nav>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="#">Transacciones</a>
+        <a href="#">Perfil</a>
+        <button id="logoutBtn">Cerrar sesión</button>
+    </nav>
+</header>
+
+<section class="wallet-overview">
+    <div class="card balance">
+        <h2>Saldo Total</h2>
+        <p>0.5234 BTC</p>
+    </div>
+    <div class="card portfolio">
+        <h2>Portafolio</h2>
+        <p>2 Criptomonedas</p>
+    </div>
+    <div class="card recent">
+        <h2>Última Transacción</h2>
+        <p>+0.01 BTC recibido</p>
+    </div>
+</section>
+
+<section class="crypto-list">
+    <h2>Criptomonedas</h2>
+    <div id="cards" class="crypto-cards">
+        <!-- Tarjetas de usuarios MockAPI aparecerán aquí -->
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 Mi Billetera Cripto</p>
+</footer>
+
+<script src="scripts/dashboard.js"></script>
+</body>
+</html>

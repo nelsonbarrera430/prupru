@@ -1,0 +1,106 @@
+/* --- Dashboard billetera --- */
+.wallet-overview {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 50px;
+    gap: 20px;
+}
+
+.card {
+    background: rgba(255,255,255,0.05);
+    padding: 30px;
+    border-radius: 15px;
+    flex: 1;
+    text-align: center;
+    backdrop-filter: blur(5px);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+.card h2 {
+    font-size: 20px;
+    color: #ffd700;
+    margin-bottom: 15px;
+}
+
+.card p {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.crypto-list {
+    margin: 50px;
+}
+
+.crypto-list h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #ffd700;
+}
+
+.crypto-cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.crypto-card {
+    background: rgba(255,255,255,0.05);
+    padding: 20px;
+    border-radius: 12px;
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.crypto-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+.crypto-card h3 {
+    color: #ffd700;
+    margin-bottom: 10px;
+}
+
+.crypto-card p {
+    font-size: 18px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: rgba(0,0,0,0.3);
+    backdrop-filter: blur(10px);
+}
+
+header h1 {
+    font-size: 28px;
+    color: #ffd700;
+}
+
+header nav a {
+    color: #fff;
+    margin-left: 25px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+header nav a:hover {
+    color: #ffd700;
+}
+
+footer {
+    text-align: center;
+    padding: 30px 0;
+    color: #aaa;
+    background: rgba(0,0,0,0.2);
+    margin-top: 50px;
+}
